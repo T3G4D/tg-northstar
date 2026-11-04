@@ -1,0 +1,41 @@
+.main{
+    display:column;
+    background-color:white;
+    font-family:Cambria,serif;
+    font-size:1.25rem;
+}
+@media(max-width:768px){
+.preorder{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    background-color:white;
+    border:1rem solid rgba(177, 216, 246, 0.7);
+    font-size:1.25rem;
+    font-family:Cambria,serif;
+    gap:0.25rem;
+}
+}
+.preorder{
+    display:column;
+    background-color:white;
+    border:1rem solid beige;
+    font-size:1.25rem;
+    font-family:Cambria,serif;
+    gap:0.25rem;
+}
+.header{
+    margin:1rem auto;
+    color:black;
+    font-size:4.25rem;
+    font-weight:700;
+}
+.inquiry{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    border:1rem solid beige;
+    align-items:space-evenly;
+    gap:0.5rem;
+    font-size:1.25rem;
+}

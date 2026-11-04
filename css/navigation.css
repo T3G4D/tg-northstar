@@ -1,0 +1,36 @@
+ .flex-container{
+    margin:0 auto;
+    width:90%;
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+    font-size:1.2rem;
+    gap:20px;
+/*is this not literally how it was default*/
+}
+.flex-item{
+    flex: 1 1 0;
+}
+ul{
+   list-style-type:none;
+}
+   a:link {
+color: #0066cc;
+}
+
+a:visited {
+color: #551a8b;
+}
+
+a:hover {
+color: #004499;
+}
+
+a:focus {
+color: #004499;
+outline: 2px solid #004499;
+}
+
+a:active {
+color: #002244;
+}

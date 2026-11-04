@@ -1,0 +1,42 @@
+main{
+    background-color:white;
+    text-align:center;
+    font-family:Cambria, serif;
+}
+h2{
+    font-size:3.5rem;
+    font-weight:650;
+}
+h3{
+    width:fit-content;
+    color:black;
+    margin:1rem auto;
+    font-size:2.5rem;
+    font-weight:550;
+}
+h4{
+    width:fit-content;
+    color:black;
+    text-decoration:underline rgba(4, 111, 194, 0.7);
+    padding:0.5rem;
+    margin:1rem auto;
+    font-size:2rem;
+    font-weight:450;
+}
+.description{
+    width:fit-content;
+    margin:1rem auto;
+    padding:0.25rem;
+    background-color:beige;
+    color:black;
+    font-size:1.5rem;
+    font-weight:400;
+    font-style:italic;
+}
+p{
+    width:fit-content;
+    margin:1rem auto;
+    color:black;
+    font-size:1.25rem;
+    font-weight:400;
+}

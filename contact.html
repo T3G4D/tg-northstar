@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="stylesheet" href="css/navigation.css"></rel>
+    <link rel="stylesheet" href="css/styles.css"></rel>
+    <link rel="stylesheet" href="css/contact.css"></rel>
+</head>
+<body>
+    <a href="#main-content">Skip to main content</a>
+    <header>
+        <h1 class="header">Contact Information</h1>
+        <nav aria-label="Primary">
+            <ul class="flex-container">
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="products.html">View Our Menu</a></li>
+                <li><a href="about.html">Visit Our About Page</a></li>
+                <li><a href="contact.html" aria-current="page">Pre-Orders and Inquiries</a></li>
+            </ul>
+        </nav>
+        <img src="images/bakery-logo_c.png"
+            srcset="images/bakery-logo_c.png 1x, images/bakery-logo_c.png 2x"
+            alt=""
+            width="750"
+            height="650">
+    </header>
+<main class="main" id="main-content">
+    <h2>Location Information</h2>
+    <p>You can find us on the corner of 123 Boulevard, right next to General Supermarket</p>
+    <h2>Operating Hours</h2>
+    <p>We are open from 7:00am until 8:00pm Monday-Friday</p>
+    <h2>Pre-Order Requests and Inquiries</h2>
+    <form action="/contact" method="post">
+        <fieldset class="preorder">
+            <legend>Pre-Order Form</legend>
+            <p>Select Your Order Below:</p>
+            <h3>Breads</h3>
+            <label>
+            <input type="checkbox" name="order" value="sourdough"> Sourdough Loaf ($10)
+            </label> 
+            <label>
+            <input type="checkbox" name="order" value="multigrain"> Multigrain Loaf ($11)
+            </label> 
+            <label>
+            <input type="checkbox" name="order" value="walnutraisinrye"> Walnut Raisin Rye Loaf ($14)
+            </label> 
+            <label>
+            <input type="checkbox" name="order" value="wholewheat"> Whole Wheat Loaf ($10)
+            </label>
+            <h3>Cookies</h3>
+            <label>
+            <input type="checkbox" name="order" value="butterpecancookies"> Butter Pecan Cookies x6 ($9)
+            </label> 
+            <label>
+            <input type="checkbox" name="order" value="chocchipcookies"> Chocolate Chip Cookies x6 ($10)
+            </label> 
+            <label>
+            <input type="checkbox" name="order" value="chocpbcookies"> Chocolate Peanut Butter Cookies x6 ($12)
+            </label>
+            <h3>Cakes</h3>
+            <label>
+            <input type="checkbox" name="order" value="raspalmondcake"> Raspberry Almond Cake Slice ($8)
+            </label> 
+            <label>
+            <input type="checkbox" name="order" value="chocstrawcake"> Chocolate Strawberry Cake Slice ($11)
+            </label> 
+            <label>
+            <input type="checkbox" name="order" value="lemonmasccake"> Lemon Mascarpone Cake Slice ($11)
+            </label> 
+            <label>
+            <input type="checkbox" name="order" value="tiramisucake"> Tiramisu Cake Slice ($12)
+            </label> <br> <br>
+            <label for="fullname">Your Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="John Smith" required>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="123bakery@bake.com" required> <br> <br>
+            <label for="date">Order Pickup Date (MM/DD/YYYY)</label>
+            <input type="date" id="date" name="date" required>
+            <br> <br>
+            <button type="submit">Submit Order</button>
+        </fieldset>
+</form>
+<form>
+        <fieldset class="inquiry">
+            <legend>Inquiry Form</legend>
+            <label for="fullname">Your Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="John Smith" required>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="123bakery@bake.com" required> <br>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Allergens, Nutrition, etc..."> <br>
+            <textarea name="message" rows="5" cols="40" placeholder="Enter questions or comments here..."></textarea>
+            <button type="submit">Submit</button>
+        </fieldset>
+</form>
+</main>
+<footer>
+    <p class="footer">Our Phone Number: 123-456-7890 <br>
+        <a href="unincluded/privacy.html">Privacy Policy</a>
+        <a href="unincluded/terms.html">Terms of Service</a>
+        &copy; 2026 North Star Bakery</p>
+</footer>
+</body>
+</html>
