@@ -1,0 +1,14 @@
+.main-content{
+    background-color:white;
+    text-align:center;
+    font-family:Cambria, serif;
+}
+p{
+    width:fit-content;
+    background-color:#FFF8F0;
+    padding:0.25rem;
+    margin:1rem auto;
+    color:black;
+    font-size:1.5rem;
+    font-weight:400;
+}

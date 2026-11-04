@@ -1,0 +1,69 @@
+*, 
+*::before, 
+*::after { 
+box-sizing: border-box; 
+}
+body{
+    background-color:white;
+    border:0.5rem solid #6B3E26;
+    text-align:center;
+    font-family:Franklin Gothic Medium, serif;
+}
+h1{
+    margin:1rem auto;
+    color:black;
+    font-size:4.25rem;
+    font-weight:700;
+}
+h2{
+    width:fit-content;
+    color:black;
+    margin:1rem auto;
+    font-size:3rem;
+    font-weight:600;    
+}
+h3{
+    width:fit-content;
+    color:black;
+    margin:1rem auto;
+    font-size:2.25rem;
+    font-weight:550;
+}
+input[type="checkbox"]{
+    min-height:20px;
+    min-width:20px;
+    position:relative;
+}
+button:focus-visible {
+outline: 3px solid #007bff;
+outline-offset: 2px;
+}
+:focus-visible{
+    outline:3px solid #06c;
+    outline-offset:2px;
+}
+.email-input:valid{
+    padding:10px;
+    border-color:#28a745;
+}
+.email-input:invalid{
+    padding:10px;
+    border-color:#f40707;
+}
+video{
+    max-width:768px;
+    width:100%;
+    margin:1rem auto;
+}
+img{
+    max-width:768px;
+    width:100%;
+    margin:1rem auto;
+}
+.footer{
+    font-family:Cambria,serif;
+    font-size:1rem;
+    color:black;
+    background:none;
+    border:none;
+}
