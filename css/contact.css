@@ -19,7 +19,7 @@
 .preorder{
     display:column;
     background-color:white;
-    border:1rem solid beige;
+    border:1rem solid #FFF8F0;
     font-size:1.25rem;
     font-family:Cambria,serif;
     gap:0.25rem;
@@ -34,7 +34,7 @@
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
-    border:1rem solid beige;
+    border:1rem solid #FFF8F0;
     align-items:space-evenly;
     gap:0.5rem;
     font-size:1.25rem;

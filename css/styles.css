@@ -5,7 +5,7 @@ box-sizing: border-box;
 }
 body{
     background-color:white;
-    border:0.5rem solid rgba(177, 216, 246, 0.7);
+    border:0.5rem solid #6B3E26;
     text-align:center;
     font-family:Franklin Gothic Medium, serif;
 }

@@ -4,14 +4,14 @@
     font-family:Cambria, serif;
 }
 h3{
-    text-decoration:underline rgba(4, 111, 194, 0.7);
+    text-decoration:underline #D88C5A;
 }
 p{
     width:fit-content;
     padding:0.5rem;
     margin:1rem auto;
     color:black;
-    background-color:beige;
+    background-color:#FFF8F0;
     font-size:1.5rem;
     font-weight:400;
 }

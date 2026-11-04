@@ -17,7 +17,7 @@ h3{
 h4{
     width:fit-content;
     color:black;
-    text-decoration:underline rgba(4, 111, 194, 0.7);
+    text-decoration:underline #D88C5A;
     padding:0.5rem;
     margin:1rem auto;
     font-size:2rem;
@@ -27,7 +27,7 @@ h4{
     width:fit-content;
     margin:1rem auto;
     padding:0.25rem;
-    background-color:beige;
+    background-color:#FFF8F0;
     color:black;
     font-size:1.5rem;
     font-weight:400;
