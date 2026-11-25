@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/navigation.css"></rel>
     <link rel="stylesheet" href="css/styles.css"></rel>
     <link rel="stylesheet" href="css/contact.css"></rel>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <a href="#main-content">Skip to main content</a>
@@ -71,28 +72,54 @@
             <label>
             <input type="checkbox" name="order" value="tiramisucake"> Tiramisu Cake Slice ($12)
             </label> <br> <br>
-            <label for="fullname">Your Full Name</label>
-            <input type="text" id="fullname" name="fullname" placeholder="John Smith" required>
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" placeholder="123bakery@bake.com" required> <br> <br>
+            <div class="input-groupo">
+                <label for="full-nameo">Your Full Name</label>
+                <input type="text" id="full-nameo" name="full-name" placeholder="John Smith" onkeyup="validateNameo()" required>
+                <span id="nameo-error"></span>
+            </div>
+            <div class="input-groupo">
+                <label for="contact-emailo">Your Email</label>
+                <input type="email" id="contact-emailo" name="email" placeholder="123bakery@bake.com" autocomplete="email" onkeyup="validateEmailo()" required> <br> <br>
+                <span id="emailo-error"></span>
+            </div>
             <label for="date">Order Pickup Date (MM/DD/YYYY)</label>
             <input type="date" id="date" name="date" required>
             <br> <br>
-            <button type="submit">Submit Order</button>
+            <button onclick="return validateFormo()" type="submit">Submit Order</button>
+            <span id="submito-error"></span>
         </fieldset>
 </form>
 <form>
-        <fieldset class="inquiry">
-            <legend>Inquiry Form</legend>
-            <label for="fullname">Your Full Name</label>
-            <input type="text" id="fullname" name="fullname" placeholder="John Smith" required>
+    <fieldset class="inquiry">
+        <legend>Inquiry Form</legend>
+        <div class="input-group">
+            <label for="full-name">Your Full Name</label>
+            <input type="text" id="full-name" name="full-name" placeholder="John Smith" onkeyup="validateName()" required>
+            <span id="name-error"></span>
+        </div>
+        <div class="input-group">
             <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" placeholder="123bakery@bake.com" required> <br>
+            <input type="email" id="contact-email" name="email" placeholder="123bakery@bake.com" onkeyup="validateEmail()" autocomplete="email" required>
+            <span id="email-error"></span>
+        </div>
+        <div class="input-group">
             <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Allergens, Nutrition, etc..."> <br>
-            <textarea name="message" rows="5" cols="40" placeholder="Enter questions or comments here..."></textarea>
-            <button type="submit">Submit</button>
-        </fieldset>
+            <input type="text" id="subject" name="subject" placeholder="Allergens, Nutrition, etc..." onkeyup="validateSubject()"> <br>
+            <span id="subject-error"></span>
+        </div>
+        <div class="input-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" cols="40" placeholder="Enter questions or comments here..." onkeyup="validateMessage()"></textarea>
+            <span id="message-error"></span>
+        </div>
+        <button onclick="return validateForm()" onsubmit="openSubmitSuccess()" type="submit">Submit</button>
+        <span id="submit-error"></span>
+        <div class="submit-success" id="submit-success">
+            <h2>Thank you for your inquiry!</h2>
+            <p>Your message has been sent successfully.</p>
+            <button onclick="closeSubmitSuccess()" type="button">OK</button>
+        </div>
+    </fieldset>
 </form>
 </main>
 <footer>

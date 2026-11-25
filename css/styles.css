@@ -67,3 +67,17 @@ img{
     background:none;
     border:none;
 }
+.input-group span{
+    position:relative;
+    font-size:1rem;
+}
+#submit-error{
+    color:red;
+}
+.input-groupo span{
+    position:relative;
+    font-size:1rem;
+}
+#submito-error{
+    color:red;
+}
